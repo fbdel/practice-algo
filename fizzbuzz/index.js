@@ -13,18 +13,18 @@
 //   buzz
 
 function fizzBuzz(n) {
-    
-    for (let currNum=1; currNum<n+1, currNum++ ) {
-        if (currNum % 3 && currNum %5){
-            console.log ("fizzbuzz")
-        }else if (currNum %3){
+    for (let i=0; i<n;i++){
+        if (i%3){
             console.log("fizz")
-        }else if (currNum %5){
+        }else if (i%5){
             console.log("buzz")
+        }else if (i%5 && i%3){
+            console.log("fizzbuzz")
         }else{
-            console.log(currNum)
+            console.log(i)
         }
     }
 }
 
 module.exports = fizzBuzz;
+
