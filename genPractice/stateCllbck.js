@@ -34,6 +34,7 @@ class Library extends React.Component {
   state = { open: false };
   //setState is Asynchronous so converted to callback Fn here
   //Binding Method using CallBack ("= () =>")-  new (old is above)
+  //Arrow Function Automatically bind things
   toggleOpenClosed = () => {
     this.setState(prevState => ({
       open: !prevState.open
