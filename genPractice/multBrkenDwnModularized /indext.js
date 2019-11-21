@@ -8,6 +8,11 @@ import Library from "./Library";
 //Added  "import React from "react";" to each file
 //Library.js File Approriate Files (Eg. "import { Book } from "./Book";")
 //Imported ProTypes in Library.js file ("import PropTypes from "prop-types";")
+//NPM run build
+// ???Serve locally with a static server using NPM Serve Package - Commment: sudo npm install serve -g??
+
+//Learn More on Lynda (Courses: React Recipes, Lifecycles, Comp-Context-Accessibility)
+
 //*****************************************************
 
 let bookList = [
