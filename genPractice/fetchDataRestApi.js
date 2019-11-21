@@ -61,6 +61,8 @@ class Library extends React.Component {
   render() {
     const { books } = this.props;
     //Conditional rendering: rendered according to state of hire
+    
+    //Adjustments: added conditional statement that renders div that iterates data to creat seperate div per product if loaded (*added key prop and Alt text)
     return (
       <div>
         {this.state.hiring ? <Hiring /> : <NotHiring />}
@@ -68,15 +70,15 @@ class Library extends React.Component {
         {this.state.loading 
           ? "loading..." 
           : <div>
-            {this.data.map(product => { 
-              return(
-                <div>
-                  <h2>Library Products of the Week</h2>
-                  <h3>{product.name}</h3>
-                  <img src={product.image} height={100}/>
-                </div>
-              )
-            })}
+              {this.data.map((product) => { 
+                return(
+                  <div key={product.id}>
+                    <h2>Library Products of the Week</h2>
+                    <h3>{product.name}</h3>
+                    <img alt={product.name} src={product.image} height={100} />
+                  </div>
+                )
+              })}
         </div>
 
         }
