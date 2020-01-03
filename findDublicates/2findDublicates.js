@@ -18,3 +18,6 @@ function findDublicates(arr) {
 }
 
 findDublicates([1, 1, 1, 3, 2, 2, 4, 5, 5])
+
+
+
